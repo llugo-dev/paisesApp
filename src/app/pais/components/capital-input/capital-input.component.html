@@ -1,0 +1,13 @@
+
+
+<form (ngSubmit)="buscar(); ">
+    <input 
+        type="text"
+        class="form-control"
+        placeholder="Buscar capital..."
+        name="termino"
+        [(ngModel)]="termino"
+        (input)="teclaPresionada()"
+        #txtTermino
+        >
+</form>
